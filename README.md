@@ -1,4 +1,4 @@
-# vite-app Helm Chart
+# vite-react-app-helm-charts
 
 A Helm chart for deploying a **Vite-based web application** to Kubernetes.
 
