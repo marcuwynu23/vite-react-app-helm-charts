@@ -193,6 +193,54 @@ helm template .
 
 ---
 
+## Installation (via Artifact Hub)
+
+The easiest way to install the chart is directly from the remote repository.
+
+1. Add the Repository
+
+```bash
+helm repo add marcu-repo https://marcuwynu23.github.io/vite-react-app-helm-charts/
+helm repo update
+```
+
+2. Install the Chart
+
+```bash
+helm install vite-react-app marcu-repo/vite-react-app-helm-charts
+```
+
+## Upgrade & Scaling
+
+### To Upgrade to a newer version:
+
+```bash
+helm repo update
+helm upgrade vite-react-app marcu-repo/vite-react-app-helm-charts
+```
+
+### To Scale Replicas (e.g., scale to 4):
+
+You can override the default values directly from the command line:
+
+```bash
+helm upgrade vite-react-app marcu-repo/vite-react-app-helm-charts --set replicaCount=4
+```
+
+### Configuration Overrides
+
+If you want to use a custom my-values.yaml file with the remote chart:
+
+1. Create a my-values.yaml locally.
+
+2. Run the install/upgrade with the -f flag:
+
+```bash
+helm upgrade --install vite-react-app marcu-repo/vite-react-app-helm-charts -f my-values.yaml
+```
+
+---
+
 ## 📌 Notes
 
 - Ensure your container image is publicly accessible or configure `imagePullSecrets`
