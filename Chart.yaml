@@ -1,5 +1,5 @@
 apiVersion: v2
-name: vite-app
+name: vite-react-app-helm-charts
 description: A modern web application built with Vite, a next-generation frontend build tool.
 
 # A chart can be either an 'application' or a 'library' chart.
