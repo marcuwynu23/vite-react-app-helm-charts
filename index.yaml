@@ -1,0 +1,15 @@
+apiVersion: v1
+entries:
+  vite-react-app-helm-charts:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2026-04-20T21:35:38.5734686+08:00"
+    description: A modern web application built with Vite, a next-generation frontend
+      build tool.
+    digest: 447d025e313e1c7e23bf84c4ff84031985d94b69a10c37b2defb4fe0598e4f7e
+    name: vite-react-app-helm-charts
+    type: application
+    urls:
+    - vite-react-app-helm-charts-0.1.0.tgz
+    version: 0.1.0
+generated: "2026-04-20T21:35:38.5723947+08:00"
