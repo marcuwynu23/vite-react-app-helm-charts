@@ -10,14 +10,14 @@ ghcr.io/marcuwynu23/vite-app-sample:latest
 
 ---
 
-## 📦 Prerequisites
+## Prerequisites
 
 - Kubernetes cluster (e.g., Minikube, Docker Desktop, or cloud cluster)
 - Helm 3.x installed
 
 ---
 
-## 🚀 Installation
+## Installation
 
 Clone the repository and install the chart:
 
@@ -29,7 +29,7 @@ helm install vite-app .
 
 ---
 
-## 🔄 Upgrade / Reinstall
+## Upgrade / Reinstall
 
 ```bash
 helm upgrade vite-app .
@@ -44,7 +44,7 @@ helm install vite-app .
 
 ---
 
-## 🌐 Accessing the Application
+## Accessing the Application
 
 By default, the service is exposed using **NodePort**:
 
@@ -78,7 +78,7 @@ http://localhost:<nodePort>
 
 You can customize the deployment via `values.yaml`.
 
-### 🔑 Key Settings
+### Key Settings
 
 #### Image
 
@@ -119,7 +119,7 @@ ingress:
 
 ---
 
-## 📊 Scaling
+## Scaling
 
 Enable autoscaling:
 
@@ -133,7 +133,7 @@ autoscaling:
 
 ---
 
-## ❤️ Health Checks
+## Health Checks
 
 Liveness and readiness probes are enabled:
 
@@ -151,7 +151,7 @@ readinessProbe:
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 vite-app/
@@ -165,7 +165,7 @@ vite-app/
 
 ---
 
-## 🛠 Troubleshooting
+## Troubleshooting
 
 ### Check Pods
 
@@ -193,7 +193,7 @@ helm template .
 
 ---
 
-## 📌 Notes
+## Notes
 
 - Ensure your container image is publicly accessible or configure `imagePullSecrets`
 - Ingress requires an ingress controller (e.g., NGINX)
